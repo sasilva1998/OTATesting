@@ -12,8 +12,9 @@ def start():
 	from main.action import process
 
 	process()
-
-	ota_updater.check_for_update_to_install_during_next_reboot()
+	o = OTAUpdater('https://github.com/sasilva1998/OTATesting.git')
+   	o.download_and_install_update_if_available('NETLIFE-Silva', 'SASM3141')
+	o.check_for_update_to_install_during_next_reboot()
 
 
 def boot():
