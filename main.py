@@ -11,7 +11,7 @@ def download_and_install_update_if_available():
 def start():
 	from main.ota_updater
 	from main.action import action
-	
+
 	action()
 
 	ota_updater.check_for_update_to_install_during_next_reboot()
