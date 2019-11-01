@@ -9,12 +9,10 @@ def download_and_install_update_if_available():
 
 
 def start():
-	import time
 
-	for i in range(0,10):
-		print(i*3)
+	from main.action import Action
+	Action.action()
 
-	time.sleep(3)
 	ota_updater.check_for_update_to_install_during_next_reboot()
 
 
