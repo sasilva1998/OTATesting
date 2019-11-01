@@ -8,8 +8,8 @@ def download_and_install_update_if_available():
 
 
 def start():
-	for i in range(0,15):
-		print(i*2)
+	for i in range(0,10):
+		print(i*3)
 
 
 def boot():
